@@ -1,3 +1,1 @@
-# Smartlegis;
-
-- Criação da pokedex
+PROJETO POKEDEX
