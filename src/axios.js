@@ -2,11 +2,11 @@ import axios from "axios";
 import router from "./router";
 
 const getAPI = axios.create({
-  baseURL: "http://testeaws.smartlegis.net.br/api/",
+  baseURL: "https://pokeapi.co/api/v2/",
   timeout: 60000,
 });
 const AxiosAPI = axios.create({
-  baseURL: "http://testeaws.smartlegis.net.br/api/", //http://54.91.78.222/api/
+  baseURL: "https://pokeapi.co/api/v2/", //http://54.91.78.222/api/
   timeout: 60000,
 });
 
