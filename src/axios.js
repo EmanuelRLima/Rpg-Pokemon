@@ -6,7 +6,7 @@ const getAPI = axios.create({
   timeout: 60000,
 });
 const AxiosAPI = axios.create({
-  baseURL: "https://pokeapi.co/api/v2/", //http://54.91.78.222/api/
+  baseURL: "https://pokeapi.co/api/v2/",
   timeout: 60000,
 });
 
