@@ -6,6 +6,14 @@
     background-position:center;
     background-size: cover;
   }
+
+  .background_scren {
+    background-image: url("../img/poke_background.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    background-size: cover;
+  }
   
   .position_layout_grid{
     position: absolute;
@@ -20,6 +28,136 @@
     border: 3px solid;
   }
   
+  .nav_layout{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    height: clamp(min(1vw, 3rem), 75px, max(49vw, 34rem));
+  }
+
+  .footer_layout_grid{
+    position: absolute;
+    top: 63%;
+    left: 45%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    width: clamp(min(2vw, 3rem), 435px, max(71vw, 13rem));
+    height: clamp(min(1vw, 3rem), 270px, max(25vw, 15rem));
+  }
+
+  .search_poke_grid{
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    width: 250px;
+    height: 50px;
+  }
+
+  .search_poke{
+    width: clamp(min(2vw, 3rem), 215px, max(30vw, 7rem)) !important;
+    height: clamp(min(1vw, 3rem), 51px, max(49vw, 42rem));
+  }
+
+  .joystic{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 21%;
+    left: 75%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+  }
+  .joystic_up{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-right: -50%;
+    width: 30px;
+    height: 42px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+  }
+  .joystic_left{
+    position: absolute;
+    top: 22%;
+    left: 18%;
+    margin-right: -50%;
+    width: 30px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    transform: rotate(270deg);
+  }
+  .joystic_down{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    margin-right: -50%;
+    width: 30px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    transform: rotate(180deg);
+  }
+  .joystic_right{
+    position: absolute;
+    top: 22%;
+    left: 82%;
+    margin-right: -50%;
+    width: 30px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    transform: rotate(90deg);
+  }
+  .Button_pokedex{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    background-color: cornflowerblue; 
+    border: 4px solid white;
+  }
+
+  .Button_pokedex_mini{
+    position: absolute;
+    top: 10%;
+    width: 10px;
+    height: 15px;
+    border-radius: 50%; 
+    background-color: cornflowerblue; 
+    border: 1px solid black;
+  }
+
+  .first{
+    left: 22%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    background-color: #fb1616;
+  }
+  .second{
+    left: 29%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    background-color: yellow;
+  }
+  .third{
+    left: 36%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    background-color: green;
+  }
   .screen_layout_grid{
     position: absolute;
     top: 10%;
