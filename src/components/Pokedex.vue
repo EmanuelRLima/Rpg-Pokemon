@@ -24,9 +24,9 @@
 
           <div class="joystic">
             <button class="joystic_up"><i class="fa fa-arrow-up"></i></button>
-            <button class="joystic_left"><i class="fa fa-arrow-up"></i></button>
+            <button class="joystic_left"><i class="fa fa-arrow-up" @click="Get_Pokemon_id(2)"></i></button>
             <button class="joystic_down"><i class="fa fa-arrow-up"></i></button>
-            <button class="joystic_right"><i class="fa fa-arrow-up"></i></button>
+            <button class="joystic_right" @click="Get_Pokemon_id(1)"><i class="fa fa-arrow-up"></i></button>
           </div>
         </div>
       </div>
@@ -44,6 +44,7 @@ export default {
   },  
   data() {
     return {
+      pokemon_id: 0,
       pokemon: "",
       pokemon_img: img_wait,
     };
@@ -58,9 +59,26 @@ export default {
       .then((resp) =>{
         console.log(resp)
         this.pokemon_img = resp.data.sprites.other.home.front_default
+        this.pokemon_id = resp.data.id
       })
     },
-   
+
+    Get_Pokemon_id(id){
+      if(id == 1){
+        this.pokemon_id = this.pokemon_id + 1
+      }
+      else if(id == 2){
+        this.pokemon_id = this.pokemon_id - 1
+      }else if(id == 3){
+        return
+      }
+      AxiosAPI.get("pokemon/" + this.pokemon_id)
+      .then((resp) =>{
+        console.log(resp)
+        this.pokemon_img = resp.data.sprites.other.home.front_default
+        this.pokemon_id = resp.data.id
+      })
+    },
   },
 };
 
