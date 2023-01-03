@@ -1,0 +1,47 @@
+
+.background_campo {
+    background-image: url("../img/campo_poke.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    background-size: cover;
+  }
+  
+  .position_layout_grid{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 5%);
+    box-shadow: rgb(0 0 0 / 75%) 0px 20px 45px, rgb(0 0 0 / 28%) 0px 16px 15px;
+    width: clamp(min(2vw, 3rem), 490px, max(80vw, 17rem)); 
+    height: clamp(min(1vw, 3rem), 720px, max(49vw, 42rem)); 
+    background-color: #DC0A2D; border-radius: 2%;
+    border: 3px solid;
+  }
+  
+  .screen_layout_grid{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    height: clamp(min(1vw, 3rem), 380px, max(49vw, 34rem));
+    border-bottom: 6px double;
+    border-top: 6px double;
+  }
+  .left_nav_layout_grid{
+    position: absolute;
+    left: 95%;
+    margin-right: 0%;
+    transform: translate(-50%, 0%);
+    width: 10%;
+    border-left: 6px double;
+    height: 100%;
+  }
+  
+  .screen_poke{
+    width: 90%;
+    height: 100%;
+  }
