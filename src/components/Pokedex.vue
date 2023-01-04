@@ -28,6 +28,21 @@
             <button class="joystic_down"><i class="fa fa-arrow-up"></i></button>
             <button class="joystic_right" @click="Get_Pokemon_id(1)"><i class="fa fa-arrow-up"></i></button>
           </div>
+
+          <div class="infos_grid">
+            <div class="info_pokemon">
+              <span class="number_pokemon mr-3"> Number: {{ pokemon_id }} </span><br/>
+              <span class="type_main_poke mr-3"> Type: {{ type_main_poke }} </span><br/>
+              <span class="hp_pokemon mr-3">Hp start: {{ hp_pokemon }} </span><br/>
+              <span class="atack_pokemon mr-3">Atack start: {{ atack_pokemon }} </span><br/>
+              <span class="defese_pokemon">Defense start: {{ defese_pokemon }} </span>
+            </div>
+          </div>
+
+          <div class="buttons_info_poke">
+            <button class="d-flex details_one mt-3 mb-3"><span style="width: 85px;" class="d-flex justify-content-center"> More </span></button>
+            <button class="d-flex details_two"><span style="width: 85px;" class="d-flex justify-content-center"> Stats </span></button>
+          </div>
         </div>
       </div>
     </div>
@@ -47,6 +62,10 @@ export default {
       pokemon_id: 0,
       pokemon: "",
       pokemon_img: img_wait,
+      type_main_poke: "Aguarde...",
+      hp_pokemon: "Aguarde...",
+      atack_pokemon: "Aguarde...",
+      defese_pokemon: "Aguarde..."
     };
   },
 
@@ -60,6 +79,10 @@ export default {
         console.log(resp)
         this.pokemon_img = resp.data.sprites.other.home.front_default
         this.pokemon_id = resp.data.id
+        this.type_main_poke = resp.data.types[0].type.name
+        this.hp_pokemon = resp.data.stats[0].base_stat
+        this.atack_pokemon = resp.data.stats[1].base_stat
+        this.defese_pokemon = resp.data.stats[2].base_stat
       })
     },
 
@@ -77,6 +100,10 @@ export default {
         console.log(resp)
         this.pokemon_img = resp.data.sprites.other.home.front_default
         this.pokemon_id = resp.data.id
+        this.type_main_poke = resp.data.types[0].type.name
+        this.hp_pokemon = resp.data.stats[0].base_stat
+        this.atack_pokemon = resp.data.stats[1].base_stat
+        this.defese_pokemon = resp.data.stats[2].base_stat
       })
     },
   },

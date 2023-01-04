@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 
 .background_campo {
     background-image: url("../img/campo_poke.jpg");
@@ -48,6 +49,56 @@
     height: clamp(min(1vw, 3rem), 270px, max(25vw, 15rem));
   }
 
+  .buttons_info_poke{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    width: clamp(min(2vw, 3rem), 100px, max(40vw, 10rem));
+    height: clamp(min(1vw, 3rem), 110px, max(25vw, 15rem));
+  }
+
+  .details_one{
+    border: 1px solid black;
+    color: white;
+    width: 85px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: green;
+  }
+  .details_two{
+    border: 1px solid black;
+    color: white;
+    width: 85px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: blue;
+  }
+  .infos_grid{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    width: clamp(min(2vw, 3rem), 245px, max(40vw, 10rem));
+    height: clamp(min(1vw, 3rem), 125px, max(25vw, 15rem));
+    border: 2px double;
+  }
+
+  .info_pokemon{
+    width: clamp(min(2vw, 3rem), 245px, max(40vw, 10rem));;
+    height: clamp(min(1vw, 3rem), 125px, max(25vw, 15rem));
+    background-color: yellow;
+    font-family: 'Orbitron', sans-serif;
+  }
+
   .search_poke_grid{
     position: absolute;
     top: 15%;
@@ -65,8 +116,8 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 21%;
-    left: 75%;
+    top: 15%;
+    left: 76%;
     margin-right: -50%;
     transform: translate(-50%, 0%);
   }
@@ -80,6 +131,7 @@
     background-color: black;
     color: white;
     border: 1px solid black;
+    cursor: pointer;
   }
   .joystic_left{
     position: absolute;
@@ -92,6 +144,7 @@
     color: white;
     border: 1px solid black;
     transform: rotate(270deg);
+    cursor: pointer;
   }
   .joystic_down{
     position: absolute;
@@ -104,6 +157,7 @@
     color: white;
     border: 1px solid black;
     transform: rotate(180deg);
+    cursor: pointer;
   }
   .joystic_right{
     position: absolute;
@@ -116,6 +170,7 @@
     color: white;
     border: 1px solid black;
     transform: rotate(90deg);
+    cursor: pointer;
   }
   .Button_pokedex{
     position: absolute;
